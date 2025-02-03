@@ -20,15 +20,24 @@ const Header = () => {
         Frontend web developer
       </h1>
       <p className="max-w-2xl mx-auto font-Ovo">
-        Aspiring MERN Stack developer with hands-on experience in HTML, CSS,
-        JavaScript, and modern libraries like React. Proficient in building
-        responsive, user-friendly interfaces and implementing dynamic features.
         Passionate about creating seamless web experiences and continuously
         improving through learning
       </p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-        <a href="#contact" className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2">Contact me <Image src={assets.right_arrow_white} alt=" " className="w-6" /></a>
-        <a href="#/sample-resume.pdf" download  className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2">My Resume <Image src={assets.download_icon} alt=" " className="w-6" /></a>
+        <a
+          href="#contact"
+          className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2"
+        >
+          Contact me{" "}
+          <Image src={assets.right_arrow_white} alt=" " className="w-6" />
+        </a>
+        <a
+          href="#/sample-resume.pdf"
+          download
+          className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2"
+        >
+          My Resume <Image src={assets.download_icon} alt=" " className="w-6" />
+        </a>
       </div>
     </div>
   );

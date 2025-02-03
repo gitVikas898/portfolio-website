@@ -1,11 +1,12 @@
 'use client'
 import { assets } from '@/public/assets/assets'
 import Image from 'next/image'
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 const Navbar = () => {
 
    const sideMenuRef = useRef();
+   const [isScroll,setIsScroll] = useState(false)
 
    const openMenu = ()=>{
     sideMenuRef.current.style.transform = 'translateX(-16rem)'
@@ -16,6 +17,20 @@ const Navbar = () => {
    }
 
 
+   useEffect(()=>{
+
+        window.addEventListener("scroll",()=>{
+            if(scrollY > 50){
+                setIsScroll(true)
+            }else{
+                setIsScroll(false);
+            }
+        })
+
+   },[])
+
+
+
 
   return (
     <>
@@ -23,7 +38,7 @@ const Navbar = () => {
             <Image src={assets.header_bg_color} alt='header' className='w-full'/>
           
         </div>
-        <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 '>
+        <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ?  "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm" : ""}`}>
             <a href="#top">
                 <h1 className='text-4xl font-bold'>Vikas<span className='text-red-600 text-4xl font-bold'>.</span></h1>
                 {/* <Image src={assets.logo} className='w-28 cursor-pointer mr-14' alt='logo' /> */}

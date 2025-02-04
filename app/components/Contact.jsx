@@ -70,7 +70,7 @@ const Contact = () => {
           Submit now{" "}
           <Image src={assets.right_arrow_white} alt="arrow" className="w-4" />{" "}
         </button>
-        <p className="mt-4">{result}</p>
+        <p className=" text-center mt-4">{result}</p>
       </form>
     </div>
   );

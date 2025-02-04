@@ -81,21 +81,30 @@ export const workData = [
         title: 'Hirred',
         description: " Job portal ",
         bgImage: '/work-1.png',
+        live_url : 'https://hirred-alpha.vercel.app/',
+        repo : 'https://github.com/gitVikas898/job-portal-app'
     },
     {
         title: 'Klimate',
-        description: 'Weather application',
+        description: 'Weather app',
         bgImage: '/work-2.png',
+         live_url : 'https://klimate-alpha.vercel.app/',
+         repo : 'https://github.com/gitVikas898/Klimate'
+
     },
     {
         title: 'Netflix GPT',
         description: 'Moive App',
         bgImage: '/work-3.png',
+         live_url : 'https://movie-app-azure-eight.vercel.app/',
+         repo: 'https://github.com/gitVikas898/movie-app'
     },
     {
         title: 'Food App',
         description: 'Swiggy Clone',
         bgImage: '/work-4.png',
+         live_url : 'https://food-app-lr9l.vercel.app/',
+         repo:'https://github.com/gitVikas898/food-app'
     },
 ]
 
